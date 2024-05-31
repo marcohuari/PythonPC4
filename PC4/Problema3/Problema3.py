@@ -17,17 +17,17 @@ with open('DragonBallZ.jpg','wb') as f:
 
 import zipfile
 
-
+#zipea y crea el .zip con la imagen
 with zipfile.ZipFile('DragonBallZ.zip', 'w') as zip_file:
     zip_file.write('DragonBallZ.jpg')
 
 
 
-#Crea carpeta
+#Crea carpeta si es que no existe llamada "descomprimir"
 if not os.path.isdir('./descomprimir'): 
     os.mkdir('./descomprimir') 
 
-#Extrae de archivos
+#Extrae de archivos en la carpeta creada
 with zipfile.ZipFile('DragonBallZ.zip', 'r') as zip_ref:
     zip_ref.extractall(path='./descomprimir')
 

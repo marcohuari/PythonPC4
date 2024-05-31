@@ -1,0 +1,3 @@
+Bitcoin USD: 67651.6578
+Bitcoin GBP: 53138.28
+Bitcoin EUR: 62394.7857
